@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_app">
+
+
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="큰 글씨"
+            android:layout_marginRight="8dp"/>
+
+        <Switch
+            android:id="@+id/swBig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/greeting_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topBar"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvNickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사용자 닉네임 님,"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/textMain"/>
+
+
+        <TextView
+            android:id="@+id/tvHello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="안녕하세요!"
+            android:textSize="24sp"
+            android:textColor="@color/textMain"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/mainButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/greeting_box"
+        android:layout_above="@id/bottomBar"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="24dp"
+        android:paddingHorizontal="24dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnMatch"
+            style="@style/PrimaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="매칭하기"/>
+
+        <Button
+            android:id="@+id/btnEdit"
+            style="@style/SecondaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="내 정보 수정"/>
+
+        <Button
+            android:id="@+id/btnTraits"
+            style="@style/SecondaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="50dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="나의 성향"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#6b7280">
+
+
+        <FrameLayout
+            android:id="@+id/home_04"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless">
+
+            <ImageView
+                android:id="@+id/ivHome"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_home"
+                android:contentDescription="@string/cd_home"/>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/message_cha"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless">
+
+            <ImageView
+                android:id="@+id/ivChat"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_chat"
+                android:contentDescription="@string/cd_chat"/>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/settings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless">
+
+            <ImageView
+                android:id="@+id/ivSettings"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_settings"
+                android:contentDescription="@string/cd_settings"/>
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

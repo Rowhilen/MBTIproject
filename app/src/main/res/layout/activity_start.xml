@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+
+    <View
+        android:id="@+id/image_1"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="162dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/image_1"/>
+
+    <TextView
+        android:id="@+id/tvTitleStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="함께 성장하는 즐거움"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_below="@id/image_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/tvSub1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="나와 잘 맞는 최적의 파트너를 찾아 학습해보세요!"
+        android:layout_below="@id/tvTitleStart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"/>
+
+    <Button
+        android:id="@+id/btnStart"
+        style="@style/PrimaryButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="시작하기"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:id="@+id/tvLoginLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이미 계정이 있어요 로그인 하기"
+        android:layout_above="@id/btnStart"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"/>
+</RelativeLayout>

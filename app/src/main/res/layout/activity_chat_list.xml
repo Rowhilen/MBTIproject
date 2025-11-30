@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="채팅"
+        android:textStyle="bold"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/tvSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="대화방 목록"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/tvHeader"
+        android:layout_marginTop="8dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRoom1"
+        android:layout_below="@+id/tvListTitle"
+        android:layout_marginTop="100dp"
+        android:paddingHorizontal="12dp"
+        android:background="@color/bg_app"
+        android:foreground="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true">
+
+        <!-- 왼쪽 프로필 아이콘 -->
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/user"
+            android:contentDescription="@string/cd_user_avatar"/>
+
+        <!-- 가운데: 닉네임 + 마지막 메시지 -->
+        <LinearLayout
+            android:id="@+id/centerTexts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/ivAvatar"
+            android:layout_toLeftOf="@id/tvTime"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아름다운양말"
+                android:textStyle="bold"
+                android:textColor="@color/primary"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/tvPreview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="안녕하세요!"
+                android:textColor="#626262"
+                android:textSize="13sp"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="12dp"
+            android:text="14:00"
+            android:textColor="#9BA0A6"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_below="@id/btnRoom1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:background="#E5E7EB"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#6b7280">
+
+
+        <FrameLayout
+            android:id="@+id/home_04"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless">
+
+            <ImageView
+                android:id="@+id/ivHome"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_home"
+                android:contentDescription="@string/cd_home"/>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/message_cha"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless">
+
+            <ImageView
+                android:id="@+id/ivChat"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_chat"
+                android:contentDescription="@string/cd_chat"/>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/settings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless">
+
+            <ImageView
+                android:id="@+id/ivSettings"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_settings"
+                android:contentDescription="@string/cd_settings"/>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

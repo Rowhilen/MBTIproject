@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MBTIproject</string>
+    <string name="cd_start_icon">시작화면 아이콘</string>
+    <string name="cd_home">홈</string>
+    <string name="cd_chat">채팅</string>
+    <string name="cd_settings">설정</string>
+
+    <string name="cd_user_avatar">상대 프로필</string>
+
+</resources>

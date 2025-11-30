@@ -1,0 +1,18 @@
+<resources>
+    <style name="Base.Theme.MBTIproject" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="android:windowBackground">@color/bg_app</item>
+        <item name="colorSurface">@color/bg_app</item>
+
+
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryContainer">@color/primary</item>
+        <item name="colorOnPrimary">@color/on_primary</item>
+
+
+        <item name="android:statusBarColor">@color/bg_app</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Theme.MBTIproject" parent="Base.Theme.MBTIproject" />
+</resources>

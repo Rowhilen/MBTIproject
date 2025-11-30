@@ -1,0 +1,11 @@
+<resources>
+    <style name="PrimaryButton">
+        <item name="android:background">@drawable/btn_primary</item>
+        <item name="android:textColor">@color/buttonText</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="SecondaryButton">
+        <item name="android:background">@drawable/btn_secondary</item>
+        <item name="android:textColor">@color/primary</item>
+    </style>
+</resources>

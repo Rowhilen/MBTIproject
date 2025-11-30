@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="매칭이 완료되었어요!"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/field_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="50dp">
+            <TextView android:id="@+id/tvMyNickTitle" android:layout_marginBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="사용자 닉네임 님의 프로필" android:textStyle="bold"/>
+            <TextView android:id="@+id/tvMyType" android:layout_marginBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="성격유형 : "/>
+            <TextView android:id="@+id/tvMyInterests" android:layout_marginBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="관심분야 : "/>
+            <TextView android:id="@+id/tvMyOrg" android:layout_marginBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="소속기관 : "/>
+            <TextView android:id="@+id/tvMyGender" android:layout_marginBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="성별 : "/>
+            <TextView android:id="@+id/tvMyAge" android:layout_marginBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="연령 : "/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/field_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="12dp">
+            <TextView android:id="@+id/tvOtherNickTitle" android:layout_marginBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="아름다운양말 님의 프로필" android:textStyle="bold"/>
+            <TextView android:id="@+id/tvOtherType" android:layout_marginBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="성격유형 : "/>
+            <TextView android:id="@+id/tvOtherInterests" android:layout_marginBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="관심분야 : "/>
+            <TextView android:id="@+id/tvOtherOrg" android:layout_marginBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="소속기관 : "/>
+            <TextView android:id="@+id/tvOtherGender" android:layout_marginBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="성별 : "/>
+            <TextView android:id="@+id/tvOtherAge" android:layout_marginBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="연령 : "/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAccept"
+            style="@style/PrimaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="매칭 수락"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="@style/SecondaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="취소"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+</ScrollView>
