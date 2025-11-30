@@ -59,7 +59,7 @@ public class ChatRoomActivity extends AppCompatActivity {
 
     private void sendCurrentText() {
         String text = etMessage.getText().toString();
-        if (text.trim().isEmpty()) return;           // 공백은 무시(원하면 토스트로 안내)
+        if (text.trim().isEmpty()) return;
         addOutgoing(text.trim());
         etMessage.setText("");
     }
